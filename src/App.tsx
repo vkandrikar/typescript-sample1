@@ -6,6 +6,8 @@ import { UserContextProvider } from './components/context-sample/UserContext';
 import { User } from './components/context-sample/User';
 import { RefSample } from './components/ref-sample/RefSample';
 import { StyleSample } from './components/styles-sample/StyleSample';
+import { ReduxSample } from './components/redux-sample/ReduxSample';
+import { ReduxThunkSample } from './components/redux-sample/ReduxThunkSample';
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
         <User />
       </UserContextProvider> */}
       {/* <RefSample /> */}
-      <StyleSample styles={{ border: '1px solid red' }} />
+      {/* <StyleSample styles={{ border: '1px solid red' }} /> */}
+      {/* <ReduxSample /> */}
+      <ReduxThunkSample />
     </div>
   );
 }
