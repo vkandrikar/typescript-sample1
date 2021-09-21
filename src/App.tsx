@@ -8,6 +8,9 @@ import { RefSample } from './components/ref-sample/RefSample';
 import { StyleSample } from './components/styles-sample/StyleSample';
 import { ReduxSample } from './components/redux-sample/ReduxSample';
 import { ReduxThunkSample } from './components/redux-sample/ReduxThunkSample';
+import { EventSourceSample } from './components/event-source-sample/EventSourceSample';
+import { EventSourceRefSample } from './components/event-source-sample/EventSourceRefSample';
+import { VirtualizedSample } from './components/virtualized-sample/VirtualizedSample';
 
 function App() {
   return (
@@ -21,7 +24,10 @@ function App() {
       {/* <RefSample /> */}
       {/* <StyleSample styles={{ border: '1px solid red' }} /> */}
       {/* <ReduxSample /> */}
-      <ReduxThunkSample />
+      {/* <ReduxThunkSample /> */}
+      {/* <EventSourceSample /> */}
+      {/* <EventSourceRefSample /> */}
+      <VirtualizedSample />
     </div>
   );
 }
