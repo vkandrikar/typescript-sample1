@@ -17,7 +17,18 @@ export type PostState = {
   posts: [] | Post[]
 }
 
-export type PostAction = {
-  type: PostActionTypes.FETCH_POST_REQUEST | PostActionTypes.FETCH_POST_SUCCESS | PostActionTypes.FETCH_POST_FAILURE;
-  payload: Post[] | string;
+type PostRequestAction = {
+  type: PostActionTypes.FETCH_POST_REQUEST;
 }
+
+type PostFailureAction = {
+  type: PostActionTypes.FETCH_POST_FAILURE;
+  payload: string;
+}
+
+type PostSuccessAction = {
+  type: PostActionTypes.FETCH_POST_SUCCESS;
+  payload: Post[];
+}
+
+export type PostAction = PostRequestAction | PostFailureAction | PostSuccessAction;

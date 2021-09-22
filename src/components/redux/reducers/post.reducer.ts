@@ -6,26 +6,26 @@ const initialState: PostState = {
   posts: []
 }
 
-const postReducer = (state: PostState = initialState, action: PostAction) => {
+const postReducer = (state: PostState = initialState, action: PostAction): PostState => {
   switch (action.type) {
     case PostActionTypes.FETCH_POST_REQUEST:
       return {
         ...state,
         loading: true,
         error: ''
-      } as PostState
+      }
     case PostActionTypes.FETCH_POST_SUCCESS:
       return {
         ...state,
         loading: false,
         posts: action.payload
-      } as PostState
+      }
     case PostActionTypes.FETCH_POST_FAILURE:
       return {
         ...state,
         loading: false,
         error: action.payload
-      } as PostState
+      }
     default:
       return state
   }

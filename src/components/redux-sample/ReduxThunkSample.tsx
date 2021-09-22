@@ -7,7 +7,7 @@ export const ReduxThunkSample = () => {
   const { getAllPosts } = bindActionCreators(postActions, dispatch);
   const { loading, error, posts } = useSelector((state: ReducersType) => state.post)
 
-  console.log(loading, error, posts);
+  //console.log(loading, error, posts);
   return (
     <div>
       <button onClick={() => getAllPosts()} >Load Posts</button>

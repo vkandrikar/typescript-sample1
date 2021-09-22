@@ -15,11 +15,11 @@ type CountResetAction = {
 
 type CountAction = CountUpdateAction | CountResetAction;
 
-const initialState = {
+const initialState: ReducerCompState = {
   count: 0
 }
 
-const reducer = (state: ReducerCompState, action: CountAction) => {
+const reducer = (state: ReducerCompState, action: CountAction): ReducerCompState => {
   switch (action.type) {
     case 'increment':
       return { count: state.count + action.payload };
