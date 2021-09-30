@@ -27,6 +27,9 @@ import { GreetUser } from './components/component-props-sample/GreetUser'
 import { GenericProps } from './components/generic-props-sample/GenericProps';
 import { RestrictingProps } from './components/restricting-props-sample/RestrictingProps';
 import { TemplateLiterals } from './components/template-literals-exclude-sample/TemplateLiterals';
+import { WrappingHtmlElement } from './components/wrapping-html-element-sample/WrappingHtmlElement';
+import { ExtractingPropType } from './components/extracting-prop-type-sample/ExtractingPropType';
+import { PolymorphicComp } from './components/polymorphic-sample/PolymorphicComp';
 
 /* If component has name export */
 const ReduxSample = lazy(() => import('./components/redux-sample/ReduxSample')
@@ -82,10 +85,13 @@ function App() {
       {/* <BootstrapSample /> */}
       {/* <ForwardRefSample /> */}
       {/* <ReactTableSample /> */}
-      {/* <ComponentProps isLogin={false} component={GreetUser} /> */}
+      {/* <ComponentProps /> */}
       {/* <GenericProps /> */}
       {/* <RestrictingProps /> */}
-      <TemplateLiterals />
+      {/* <TemplateLiterals /> */}
+      {/* <WrappingHtmlElement /> */}
+      {/* <ExtractingPropType /> */}
+      <PolymorphicComp />
     </div>
   );
 }
