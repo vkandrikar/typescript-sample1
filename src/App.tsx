@@ -2,6 +2,7 @@ import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { PropsSample } from './components/props-sample/PropsSample';
 import { EventSample } from './components/event-sample/EventSample';
@@ -17,6 +18,15 @@ import { EventSourceRefSample } from './components/event-source-sample/EventSour
 import { VirtualizedSample } from './components/virtualized-sample/VirtualizedSample';
 import { ErrorBoundrySample } from './components/error-boundry-sample/ErrorBoundrySample';
 import { InfiniteScrollingSample } from './components/infinite-scrolling-sample/InfiniteScrollingSample';
+import { LineChartSample } from './components/charts-sample/LineChartSample';
+import { BootstrapSample } from './components/bootstrap-sample/BootstrapSample';
+import { ForwardRefSample } from './components/forwardref-sample/ForwardRefSample';
+import { ReactTableSample } from './components/react-table-sample/ReactTableSample';
+import { ComponentProps } from './components/component-props-sample/ComponentProps';
+import { GreetUser } from './components/component-props-sample/GreetUser'
+import { GenericProps } from './components/generic-props-sample/GenericProps';
+import { RestrictingProps } from './components/restricting-props-sample/RestrictingProps';
+import { TemplateLiterals } from './components/template-literals-exclude-sample/TemplateLiterals';
 
 /* If component has name export */
 const ReduxSample = lazy(() => import('./components/redux-sample/ReduxSample')
@@ -67,7 +77,15 @@ function App() {
       </Router> */}
 
       {/* <ErrorBoundrySample /> */}
-      <InfiniteScrollingSample />
+      {/* <InfiniteScrollingSample /> */}
+      {/* <LineChartSample /> */}
+      {/* <BootstrapSample /> */}
+      {/* <ForwardRefSample /> */}
+      {/* <ReactTableSample /> */}
+      {/* <ComponentProps isLogin={false} component={GreetUser} /> */}
+      {/* <GenericProps /> */}
+      {/* <RestrictingProps /> */}
+      <TemplateLiterals />
     </div>
   );
 }

@@ -23,7 +23,7 @@ export const InfiniteScrollingSample = () => {
 
   //console.log(loading, error, hasMore)
   return (
-    <div className="row">
+    <div className="aligner">
       {
         books && books.map((book, index) => {
           if (books.length === index + 1)

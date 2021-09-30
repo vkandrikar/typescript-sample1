@@ -44,7 +44,7 @@ export const VirtualizedSample = () => {
 
   const renderData = ({ key, index, style, parent }: RowRendererParams) => {
     return (
-      <div key={key} style={style} className="row">
+      <div key={key} style={style} className="aligner">
         <h3>{people[index].name}</h3>
       </div>
     );
@@ -59,7 +59,7 @@ export const VirtualizedSample = () => {
         rowIndex={index}
         columnIndex={0}
       >
-        <div style={style} className="row">
+        <div style={style} className="aligner">
           <h3>{people[index].name}</h3>
           <p>{people[index].bio}</p>
         </div>
